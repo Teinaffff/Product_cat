@@ -1,0 +1,242 @@
+.product-catalog {
+    transition: background 0.3s ease;
+  }
+  
+  .product-catalog.light {
+    background: #f8f9fa;
+  }
+  
+  .product-catalog.dark {
+    background: #1a1a1a;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-header {
+    padding: 16px;
+    background: inherit;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .search-bar {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-catalog.dark .header {
+    background-color: #1f1f1f;
+  }
+  
+  .logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+  }
+  
+  .logo-text {
+    font-size: 16px;
+    font-weight: 600;
+    color:#333;
+  }
+  
+  .content {
+    margin: 14px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .product-catalog.dark .content {
+    background: #2a2a2a;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 16px;
+  }
+  
+  .file-metadata {
+    margin-bottom: 16px;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .pdf-viewer-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  .placeholder-text {
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 16px;
+    background: inherit;
+    border-top: 1px solid #e8e8e8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  body.dark-theme {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  .product-catalog.dark {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  .product-catalog.dark .ant-layout-sider {
+    background-color: #141414;
+  }
+  
+  .product-catalog.dark .ant-menu {
+    background-color: #141414;
+    color: #ffffff;
+  }
+  
+  .product-catalog.dark .ant-menu-item:hover {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-submenu-title:hover {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-item-selected {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-submenu-selected {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-item-active {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-submenu-active {
+    background-color: #333333;
+  }
+  
+  .product-catalog.dark .ant-menu-item-disabled {
+    color: #666666;
+  }
+  
+  .product-catalog.dark .ant-menu-submenu-disabled {
+    color: #666666;
+  }
+  
+  .product-catalog.dark .ant-menu-item-disabled:hover {
+    background-color: transparent;
+  }
+  
+  .product-catalog.dark .ant-menu-submenu-disabled:hover {
+    background-color: transparent;
+  }
+  /* Smooth transitions */
+.product-catalog {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-drawer, .custom-sidebar {
+  transition: transform 0.3s ease;
+}
+
+.custom-menu .ant-menu-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom scrollbars */
+.custom-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-menu::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.custom-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hover effects */
+.ant-btn:hover, .ant-menu-item:hover {
+  opacity: 0.8;
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-theme .ant-layout-sider {
+  background-color: #1f1f1f;
+}
+
+.dark-theme .ant-menu {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-theme .ant-menu-item:hover {
+  background-color: #333;
+}
+
+/* Loading skeleton */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+  
+  
+  
+  
+  /* Adjust the width for mobile devices */
+  @media (max-width: 768px) {
+    .pdf-viewer-container {
+      width: 100vw; /* Full viewport width */
+      margin-left: -16px; /* Compensate for any padding or margin */
+      margin-right: -16px; /* Compensate for any padding or margin */
+    }
+  }
